@@ -6,6 +6,6 @@ Our team's strength is in our perseverance 💪. We don't quit; we keep going. S
 
  :star: :star: :star: :star: :star: :star: :star:
 
-- @maijaviska
-- @AljonaS
-- @Adelllin
+- [Maija](https://github.com/maijaviska)
+- [Aljona](https://github.com/AljonaS)
+- [Adeliina](https://github.com/Adelllin)
