@@ -3,4 +3,4 @@
 
  We are working on our teamwork
 
- :smile:
+ :star: :star: :star: :star: :star: :star: :star:
