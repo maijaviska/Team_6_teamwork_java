@@ -1,0 +1,86 @@
+package com.datorium.Datorium.API;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+import java.util.Arrays;
+
+@SpringBootApplication
+@RestController
+@CrossOrigin
+
+public class DatoriumApiApplication {
+
+	public static void main(String[] args) {
+		System.out.println("asd");
+		SpringApplication.run(DatoriumApiApplication.class, args);
+	}
+
+	@GetMapping("/ping")
+	public String ping() {
+		return "pong";
+	}
+
+	@GetMapping("/hello")
+	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+		return String.format("Hello %s!", name);
+	}
+
+	@GetMapping("/multiply")
+	public int multiply(@RequestParam(value = "number1") int number1, @RequestParam(value = "number2") int number2) {
+		return number1 * number2;
+	}
+
+	@GetMapping("/array")
+	public List<String> getArray() {
+		return Arrays.asList("ice cream", "muffin", "cake");
+	}
+
+	@GetMapping("/cheese")
+	public Cheese getCheese() {
+		Cheese cheese = new Cheese(3,  "Brie", 10.60);
+		return cheese;
+	}
+}
+
+//Add new class Cheese
+
+package com.datorium.Datorium.API;
+public class Cheese {
+    private int id;
+    private String name;
+    private double cost;
+
+    public Cheese(int id, String name, double cost) {
+        this.id = id;
+        this.name = name;
+        this.cost = cost;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+}
+
+
