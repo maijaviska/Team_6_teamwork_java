@@ -1,4 +1,4 @@
-```java
+
 DatoriumApiApplication.java
 
 @PostMapping("/cooking")
@@ -10,16 +10,16 @@ DatoriumApiApplication.java
 		}
 		return null;
 	}
- ```
 
- ```java
+___________________________________________________________
+
  package com.datorium.Datorium.API;
 
 public class Pizza {
     public String name;
 }
-```
-```java
+
+___________________________________________________________
 package com.datorium.Datorium.API;
 
 public class Ingredients {
@@ -27,4 +27,4 @@ public class Ingredients {
     public String top;
     public String sauce;
 }
-```
+
