@@ -1,0 +1,30 @@
+```java
+DatoriumApiApplication.java
+
+@PostMapping("/cooking")
+	public Pizza cooking(@RequestBody Ingredients ingredients){ // username + password
+		if(ingredients.bottom.equals("dough") && ingredients.top.equals("cheese") && ingredients.sauce.equals("ketchup") ){
+			var pizza = new Pizza();
+			pizza.name = "Margarita Pizza";
+			return pizza;
+		}
+		return null;
+	}
+ ```
+
+ ```java
+ package com.datorium.Datorium.API;
+
+public class Pizza {
+    public String name;
+}
+```
+```java
+package com.datorium.Datorium.API;
+
+public class Ingredients {
+    public String bottom;
+    public String top;
+    public String sauce;
+}
+```
