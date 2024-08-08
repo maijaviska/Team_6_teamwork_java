@@ -1,4 +1,4 @@
-# DatoriumApiApplication.java
+### DatoriumApiApplication.java
 
 package com.datorium.Datorium.API;
 
@@ -14,7 +14,7 @@ public class DatoriumApiApplication { //Main class
 	}
 }
 
-# MessageController
+### MessageController
 
 package com.datorium.Datorium.API.Controllers;
 
@@ -36,7 +36,7 @@ public class MessageController {
     }
 }
 
-# MessageService.java
+### MessageService.java
 
 package com.datorium.Datorium.API.Services;
 
@@ -49,7 +49,7 @@ public class MessageService {
     }
 }
 
-# Message.java
+### Message.java
 
 package com.datorium.Datorium.API.DTOs;
 
