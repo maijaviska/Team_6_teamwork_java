@@ -31,7 +31,7 @@ public class MessageController {
     }
 
     @PostMapping("/add")
-    public int add(@RequestBody Message message){
+    public String add(@RequestBody Message message){
         return messageService.add(message);
     }
 }
@@ -44,8 +44,8 @@ import com.datorium.Datorium.API.DTOs.Message;
 
 
 public class MessageService {
-    public int add(Message message) {
-        return 0;
+    public String add(Message message) {
+        return "Nice to see you, " + message.name + "!";
     }
 }
 
