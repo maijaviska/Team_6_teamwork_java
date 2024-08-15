@@ -125,3 +125,25 @@ public class UpdateCheeseDTO {
 
 }
 ```
+
+### POST http://localhost:8080/cheese/add
+
+```json
+{
+    "name": "Holland",
+    "price": 7,
+    "kind": "medium"
+}
+```
+
+### POST http://localhost:8080/cheese/update
+
+```json
+{
+    "cheeseIndex": 1,
+    "cheese": 
+        {"name": "Brie",
+        "price": 11,
+        "kind" : "soft"}
+}
+```
