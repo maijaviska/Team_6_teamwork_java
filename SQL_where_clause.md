@@ -1,1 +1,7 @@
-
+```sql
+SELECT * FROM Pets WHERE sex='male';
+SELECT * FROM Pets WHERE age IN (11,9,20);
+SELECT * FROM Pets WHERE name LIKE 'Da%';
+SELECT * FROM Pets WHERE OwnerId BETWEEN 3000 AND 4000;
+SELECT * FROM Pets WHERE age NOT IN (5, 10);
+```
