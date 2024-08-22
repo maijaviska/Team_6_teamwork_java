@@ -35,7 +35,7 @@ ORDER By Owners.City;
 Calculate Average sales by City
 
 ```SQL
-SELECT Owners.City, AVG(Procedures.Price) AS AverageSales
+SELECT Owners.City, ROUND(AVG(Procedures.Price), 2) AS AverageSales
 FROM Sales
 LEFT JOIN Procedures ON Sales.ProcedureCode = Procedures.ProcedureCode
 LEFT JOIN Pets ON Sales.PetID = Pets.PetID
