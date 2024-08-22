@@ -42,5 +42,4 @@ LEFT JOIN Pets ON Sales.PetID = Pets.PetID
 LEFT JOIN Owners On Pets.OwnerID = Owners.OwnerID
 GROUP BY Owners.City
 ORDER By Owners.City;
-
-If you have additional time, explore relationships with SQLight
+```
