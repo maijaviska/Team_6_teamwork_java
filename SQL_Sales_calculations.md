@@ -1,7 +1,7 @@
 Calculate total Sales by City
 
 ```SQL
-SELECT Sales.Country, Owners.City, SUM(Procedures.Price) AS TotalSales
+SELECT Owners.City, SUM(Procedures.Price) AS TotalSales
 FROM Sales
 LEFT JOIN Procedures ON Sales.ProcedureCode = Procedures.ProcedureCode
 LEFT JOIN Pets ON Sales.PetID = Pets.PetID
