@@ -32,4 +32,24 @@ CREATE TABLE Company(
    ADDRESS        CHAR(50),
    SALARY         REAL
 );
+
+
+INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
+VALUES ( 'Paul', 32, 'California', 20000.00 );
+
+INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
+VALUES ('Allen', 25, 'Texas', 15000.00 );
+
+INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
+VALUES ('Teddy', 23, 'Norway', 20000.00 );
+
+UPDATE countries SET country_population = 67.97 WHERE country_id = 1;
+UPDATE countries SET country_population = 1.87 WHERE country_id = 5;
+
+SELECT * FROM countries;
+
+DELETE FROM people WHERE person_id = 3;
+
+SELECT * FROM people;
+
 ```
